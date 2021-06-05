@@ -286,7 +286,6 @@
     
     $characterRaceTraits = demiHumanTraits ($characterRace);
     $primeReqBonus = primeReq($dexterity);
-    $secondAttack = secondAttack($level);
 
     $openLocks = openLocks ($level);
     $removeTraps = removeTraps ($level);
@@ -430,54 +429,45 @@
            ?>
            </span>
 
-           <!--
-    $openLocks = openLocks ($level);
-    $removeTraps = removeTraps ($level);
-    $pickPockets = pickPockets ($level);
-    $moveSilently = moveSilently ($level);
-    $climbWalls = climbWalls ($level);
-    $hide = hide ($level);
-    $listen = listen ($level);-->
-       
        <span id="openLocks">
        <?php
-        echo $openLocks;
+        echo $openLocks . '%';
         ?>
        </span>
        
        <span id="removeTraps">
        <?php
-        echo $removeTraps;
+        echo $removeTraps . '%';
         ?>
        </span>
        
        <span id="pickPockets">
        <?php
-        echo $pickPockets;
+        echo $pickPockets . '%';
         ?>
        </span>
        
        <span id="moveSilently">
        <?php
-        echo $moveSilently;
+        echo $moveSilently . '%';
         ?>
        </span>
        
        <span id="climbWalls">
        <?php
-        echo $climbWalls;
+        echo $climbWalls . '%';
         ?>
        </span>
        
        <span id="hide">
        <?php
-        echo $hide;
+        echo $hide . '%';
         ?>
        </span>
        
        <span id="listen">
        <?php
-        echo $listen;
+        echo $listen . '%';
         ?>
        </span>
 
@@ -701,7 +691,7 @@
        
        <span id="characterRaceTrait">
            <?php
-           echo $characterRaceTraits . $primeReqBonus . $secondAttack;
+           echo $characterRaceTraits . $primeReqBonus;
            ?>
        </span>
        
