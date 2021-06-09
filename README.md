@@ -6,6 +6,13 @@ A live version of the Basic Fantasy RPG Magic-User character generator is availa
 
 --------------------
 
+
+Update 1.02: 2021-06-09
+
+The launch page for the Basic Fantasy Thief Character Generator Version 2 has been added.
+
+
+
 Update 1.01: 2021-06-05
 
 Updated basicThief.php.
